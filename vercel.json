@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/web/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
+    {
+      "src": "api/**/*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/apps/web/$1"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "@database-url",
+    "SECRET_KEY": "@secret-key",
+    "LLM_API_KEY": "@llm-api-key",
+    "LLM_PROVIDER": "openai",
+    "EMBEDDING_PROVIDER": "openai"
+  }
+}
