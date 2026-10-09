@@ -1,0 +1,282 @@
+{
+  "app": {
+    "name": "anvaya",
+    "version": "unknown",
+    "description": ""
+  },
+  "stack": "python",
+  "routes": [
+    {
+      "method": "get",
+      "path": "/"
+    },
+    {
+      "method": "get",
+      "path": "/health"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/auth/register"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/auth/token"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/auth/me"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/researcher/profile"
+    },
+    {
+      "method": "put",
+      "path": "/api/v1/researcher/profile"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/researcher/twin"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/memory/"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/memory/"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/memory/{memory_id}"
+    },
+    {
+      "method": "put",
+      "path": "/api/v1/memory/{memory_id}"
+    },
+    {
+      "method": "delete",
+      "path": "/api/v1/memory/{memory_id}"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/memory/search"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/sources/"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/sources/"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/sources/{source_id}"
+    },
+    {
+      "method": "put",
+      "path": "/api/v1/sources/{source_id}"
+    },
+    {
+      "method": "delete",
+      "path": "/api/v1/sources/{source_id}"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/documents/"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/documents/upload"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/documents/{document_id}"
+    },
+    {
+      "method": "delete",
+      "path": "/api/v1/documents/{document_id}"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/search/"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/research/"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/skills/"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/skills/"
+    },
+    {
+      "method": "post",
+      "path": "/api/v1/skills/run"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/energy/status"
+    },
+    {
+      "method": "put",
+      "path": "/api/v1/energy/mode"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/analytics/"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/system/health"
+    },
+    {
+      "method": "get",
+      "path": "/api/v1/system/config"
+    },
+    {
+      "method": "post",
+      "path": "/register"
+    },
+    {
+      "method": "post",
+      "path": "/token"
+    },
+    {
+      "method": "post",
+      "path": "/refresh"
+    },
+    {
+      "method": "get",
+      "path": "/me"
+    },
+    {
+      "method": "post",
+      "path": "/"
+    },
+    {
+      "method": "delete",
+      "path": "/{webhook_id}"
+    },
+    {
+      "method": "post",
+      "path": "/upload"
+    },
+    {
+      "method": "get",
+      "path": "/{document_id}"
+    },
+    {
+      "method": "get",
+      "path": "/{document_id}/chunks"
+    },
+    {
+      "method": "delete",
+      "path": "/{document_id}"
+    },
+    {
+      "method": "get",
+      "path": "/status"
+    },
+    {
+      "method": "put",
+      "path": "/mode"
+    },
+    {
+      "method": "post",
+      "path": "/{integration_name}/enable"
+    },
+    {
+      "method": "post",
+      "path": "/{integration_name}/disable"
+    },
+    {
+      "method": "get",
+      "path": "/{server_id}"
+    },
+    {
+      "method": "post",
+      "path": "/{server_id}/test"
+    },
+    {
+      "method": "put",
+      "path": "/{server_id}/toggle"
+    },
+    {
+      "method": "get",
+      "path": "/{memory_id}"
+    },
+    {
+      "method": "put",
+      "path": "/{memory_id}"
+    },
+    {
+      "method": "delete",
+      "path": "/{memory_id}"
+    },
+    {
+      "method": "post",
+      "path": "/search"
+    },
+    {
+      "method": "post",
+      "path": "/analyze"
+    },
+    {
+      "method": "get",
+      "path": "/{project_id}"
+    },
+    {
+      "method": "put",
+      "path": "/{project_id}"
+    },
+    {
+      "method": "delete",
+      "path": "/{project_id}"
+    },
+    {
+      "method": "get",
+      "path": "/profile"
+    },
+    {
+      "method": "put",
+      "path": "/profile"
+    },
+    {
+      "method": "get",
+      "path": "/twin"
+    },
+    {
+      "method": "post",
+      "path": "/run"
+    },
+    {
+      "method": "get",
+      "path": "/{source_id}"
+    },
+    {
+      "method": "put",
+      "path": "/{source_id}"
+    },
+    {
+      "method": "delete",
+      "path": "/{source_id}"
+    },
+    {
+      "method": "get",
+      "path": "/config"
+    }
+  ],
+  "pages": [],
+  "base_url": "http://localhost:8000",
+  "module": null,
+  "scripts": {},
+  "cli_entry": null,
+  "server": "mcp-server/mcp_server.py",
+  "runner": "python",
+  "runner_cmd": "python3"
+}
